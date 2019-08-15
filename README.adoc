@@ -27,7 +27,7 @@ npm start
 ----
 
 Npm is also used to manage CSS and JavaScript dependencies used in this application. You can upgrade dependencies by
-specifying a newer version in link:package.json[package.json]. You can also run `npm update` and `npm install` to manage dependencies.
+specifying a newer version in link:package.json[]. You can also run `npm update` and `npm install` to manage dependencies.
 Add the `help` flag on any command to see how you can use it. For example, `npm help update`.
 
 The `npm run` command will list all of the scripts available to run for this project.
@@ -50,7 +50,7 @@ The service worker initialization code is commented out by default. To enable it
 
 ----
 
-Note: https://developers.google.com/web/tools/workbox/[Workbox] powers JHipster's service worker. It dynamically generates the `service-worker.js` file.
+NOTE: https://developers.google.com/web/tools/workbox/[Workbox] powers JHipster's service worker. It dynamically generates the `service-worker.js` file.
 
 === Managing dependencies
 
@@ -67,14 +67,16 @@ npm install --save-dev --save-exact @types/leaflet
 ----
 
 Then you would import the JS and CSS files specified in library's installation instructions so that https://webpack.github.io/[Webpack] knows about them:
-Edit link:src/main/webapp/app/vendor.ts[src/main/webapp/app/vendor.ts] file:
+Edit link:src/main/webapp/app/vendor.ts[] file:
 
+[source,typescript]
 ----
 import 'leaflet/dist/leaflet.js';
 ----
 
-Edit link:src/main/webapp/content/css/vendor.css[src/main/webapp/content/css/vendor.css] file:
+Edit link:src/main/webapp/content/css/vendor.css[] file:
 
+[source,css]
 ----
 @import '~leaflet/dist/leaflet.css';
 ----
@@ -140,7 +142,7 @@ To launch your application's tests, run:
 
 === Client tests
 
-Unit tests are run by https://facebook.github.io/jest/[Jest] and written with http://jasmine.github.io/2.0/introduction.html[Jasmine]. They're located in link:src/test/javascript/[src/test/javascript/] and can be run with:
+Unit tests are run by https://facebook.github.io/jest/[Jest] and written with http://jasmine.github.io/2.0/introduction.html[Jasmine]. They're located in link:src/test/javascript/[] and can be run with:
 
 ----
 npm test
@@ -176,7 +178,7 @@ For more information, refer to the https://www.jhipster.tech/documentation-archi
 
 == Using Docker to simplify development (optional)
 
-You can use Docker to improve your JHipster development experience. A number of docker-compose configuration are available in the link:src/main/docker[src/main/docker] folder to launch required third party services.
+You can use Docker to improve your JHipster development experience. A number of docker-compose configuration are available in the link:src/main/docker[] folder to launch required third party services.
 
 For example, to start a mysql database in a docker container, run:
 
